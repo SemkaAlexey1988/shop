@@ -1,0 +1,25 @@
+/* TwoColumns desktop */
+.columns {
+display: flex;   
+}
+.columns__left {
+flex-basis: 50%;  
+}
+.columns__right {
+flex-basis: 50%;  
+}
+/* END TwoColumns desktop */
+
+/* TwoColumns mobile */
+@media screen and (min-width:300px) and (max-width:767px) {
+.columns {
+flex-wrap: wrap;   
+}    
+.columns__left {
+flex-basis: 100%;  
+}
+.columns__right {
+flex-basis: 100%;  
+}
+}
+/* END TwoColumns mobile */

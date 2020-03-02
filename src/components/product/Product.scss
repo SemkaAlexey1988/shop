@@ -1,0 +1,62 @@
+@import '../../index.scss';
+
+
+.product-cart {
+    display: flex;
+}
+.product-cart__left {
+    flex-basis: 50%;
+}
+.product-cart__right {
+    flex-basis: 50%;
+}
+
+.comments-form .hidden {
+display: none;    
+}
+.comments-form .show {
+    display: block;    
+    }
+
+/* rating */
+    .rating-cart {
+        display: flex;  
+    }
+    .rating-block {
+        width: 125px;
+        height: 25px;
+      }
+      .rating-block::after{
+        content: '';
+        display: block;  
+        clear: both;
+        }  
+      .rating-block input[type="radio"] {
+        display: none;
+      }
+      .rating-block__label {
+        float: right;
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: url(/images/inactive-star.svg) no-repeat 50% 0;
+        cursor: pointer;
+      }
+      .rating-block .rating-block__label:hover, 
+      .rating-block .rating-block__label:hover ~ .rating-block__label, 
+      .rating-block input[type="radio"]:checked ~ .rating-block__label 
+      {
+        background: url(/images/active-star.svg) no-repeat 50% 0;
+      } 
+      .rating-cart__average {
+        padding: 0 10px;  
+      }
+      .load-rating{
+        width: 125px;
+        height: 25px; 
+        background: url(/images/active-star.svg); 
+      }
+
+/* END rating */      
+       
+

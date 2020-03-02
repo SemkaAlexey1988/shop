@@ -1,0 +1,164 @@
+/* Variables */
+$blackColor: #333;
+$orangeColor: #e24c11;
+$grayColor: #e8e3e3;
+$whiteColor: #FFF;
+$redCalor: red;
+$greenCalor: green;
+$font: font-family;
+$font-staatliches: 'Staatliches', cursive;
+$font-prociono: 'Prociono', serif;
+/* END variables */
+
+/* @Mixins */
+@mixin container {
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;    
+}
+@mixin middle {
+  max-width: 600px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;    
+}
+@mixin h2-tag {
+  font-weight: bold;
+  text-align: center;  
+  font-size: 30px; 
+}
+@mixin h3-tag {
+  text-align: center;
+  font-size: 18px;  
+  text-transform: uppercase;   
+  font-weight: bold;
+}
+/* @Mixins */
+
+/* Basic */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+height: 100%;
+}
+
+header, nav, section, main, article, aside, footer {
+display: block;
+}
+
+body {
+height: 100%;
+width: 100%;
+font-size: 16px;
+color: $blackColor;
+margin: 0;
+padding: 0;
+}
+#root {
+height: 100%;
+}
+img{
+max-width:100%;
+height:auto;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* END Basic */
+
+/* Bootstrap emulation */
+.error {
+    color: $redCalor;	
+    }
+.success {
+    color: $greenCalor;		
+    }
+    
+.input-error {
+        border: 1px solid $redCalor;
+    }
+    .site {
+position: relative;
+min-height: 100%;
+      }
+.content {
+padding-bottom: 90px;
+    }
+    
+header.site-header {
+    height: 90px;
+    width: 100%;
+            }
+    
+footer.site-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background: $blackColor;
+    color: $whiteColor; 
+    } 
+.container-block{
+     max-width: 970px;
+     width: 100%;
+     margin: 0 auto;
+     padding: 0 15px;
+
+}   
+.flex-block{
+     display: flex;
+}    
+.full-width {
+     width: 100%;
+     box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     padding: 0 40px;     
+}
+.left-block {
+     flex-basis: 25%;
+}
+.right-block {
+  flex-basis: 25%;
+}
+.content-block {
+  flex-basis: 75%;
+}
+/* End bootstrap emulation */
+
+//header
+.main-menu {
+  list-style-type: none;
+}
+.main-menu li {
+  display: inline-block;
+  vertical-align: top;
+}
+.main-menu li a {
+  line-height: 30px;
+  padding: 0 20px;
+  display: block;
+}
+//header
+
+/* @media */
+@media screen and (min-width:300px) and (max-width:500px) {
+   h2 {
+    font-size: 1.4rem;  
+    }
+}  
+/* END @media */  
+

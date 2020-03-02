@@ -1,0 +1,38 @@
+.categories-menu {
+list-style-type: none;
+}
+.categories-menu li {
+position: relative;
+}  
+.categories-menu ul {
+  list-style-type: none;
+  padding-left: 15px;
+  }
+.toggle-button{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}   
+.toggle-button::after{
+  display: inline-block;
+  vertical-align: top;
+  content: '+';
+  font-size: 20px;
+  cursor: pointer;
+}  
+.toggle-button.show::after{
+  content: '';
+}  
+.sub-menu {
+  display: none;
+}
+.sub-menu.show {
+  display: block;
+}
+
+
+
+    
+       
+
